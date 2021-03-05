@@ -1,23 +1,37 @@
 <!DOCTYPE html>
 <html>
-<head> 
-<meta charset="utf-8"> 
-<title>Welcome to my website</title> 
+<head>
+<!-- Load the Paper.js library -->
+<script type="text/javascript" src="js/paper-full.js"></script>
+<script type="text/javascript" src="js/commonlyUsedFunctions.js"></script>
+<script type="text/javascript" src="js/fx.js"></script>
+<script type="text/javascript" src="js/circle.js"></script>
+<script type="text/javascript" src="js/curve.js"></script>
+<script type="text/javascript" src="js/mouseButton.js"></script>
+<script type="text/javascript" src="js/point.js"></script>
+<script type="text/javascript" src="js/cShape.js"></script>
+<!-- Define inlined PaperScript associate it with myCanvas -->
+<script type="text/javascript" src="js/setup.js" canvas="myCanvas"></script>
+
+
+
 </head>
 <body>
-欢迎访问我的网站
-<canvas id="myCanvas" width="200" height="100" style="border:1px solid #c3c3c3;">
-您的浏览器不支持 HTML5 canvas 标签。
-</canvas>
-
-<script>
-
-var c=document.getElementById("myCanvas");
-var ctx=c.getContext("2d");
-ctx.fillStyle="#FF0000";
-ctx.fillRect(0,0,150,75);
-
-</script>
-
+	<canvas id="myCanvas" width="600" height="600"></canvas>
+	<button id="menu">Menu (click me)</button>
+	<!-- <script>
+		menu.onclick = function() {
+		  alert(1);
+	  
+		  menu.dispatchEvent(new CustomEvent("menu-open", {
+			bubbles: true
+		  }));
+	  
+		  alert(2);
+		};
+	  
+		// 在 1 和 2 之间触发
+		document.addEventListener('menu-open', () => alert('nested'));
+	  </script> -->
 </body>
 </html>
