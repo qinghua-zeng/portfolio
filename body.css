@@ -1,0 +1,46 @@
+.content {
+    
+    position: absolute;
+    top: 20px;
+    bottom: 0px;
+    left: 300px;
+    right: 0px;
+    padding-right: 50px;
+    padding-left: 10px;
+    overflow: auto;
+}
+
+.sideNav {
+    padding: 10px 0;
+    position: fixed;
+    left: 50px;
+    top: 20px;
+    bottom: 0px;
+    width: 250px;
+    /* same as .content left */
+    background-color: rgb(255, 255, 255);
+    border-right: 0.1 px solid #000;
+    z-index: 1020;
+}
+
+p.serif {
+    font-family: "Times New Roman", Times, serif;
+}
+
+p.sansserif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 8px;
+}
+
+

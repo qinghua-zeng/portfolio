@@ -1,0 +1,57 @@
+.demo {
+    text-align: center;
+    float: left;
+}
+
+.demo:hover {
+    cursor: pointer;
+}
+
+.demo:hover .font {
+    color: red;
+}
+
+.footer {
+    position: fixed;
+    left: px;
+    bottom: 30;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 9999;
+}
+
+.list {
+    height: 30;
+}
+
+.list-all {
+    padding-top:50px;
+}
+
+a:link, a:visited {
+    display: block;
+    text-decoration: none;
+    /*超链接无下划线*/
+    color: black;
+}
+
+a:hover {
+    /*鼠标放上去有下划线*/
+    color: blue;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    
+    /* background: rgba(255, 0, 0, 0); */
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.logo:hover {
+    width: 100px;
+    height: 100px;
+    
+    -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
+    transform: rotate(360deg);
+}
