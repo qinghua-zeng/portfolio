@@ -1,5 +1,4 @@
 .content {
-    
     position: absolute;
     top: 20px;
     bottom: 0px;
@@ -43,4 +42,13 @@ p {
     font-size: 8px;
 }
 
-
+@media screen and (max-width: 800px) {
+    
+    .sideNav {
+        display:none;
+        
+    }
+    .content {
+        left: 30px;
+    }
+}
