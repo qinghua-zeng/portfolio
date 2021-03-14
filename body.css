@@ -43,7 +43,10 @@ p {
 }
 
 @media screen and (max-width: 800px) {
-    
+    body {
+        overflow-x: hidden;
+    }
+
     .sideNav {
         display:none;
         
