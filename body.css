@@ -52,6 +52,7 @@ p {
         
     }
     .content {
+        overflow-x: hidden;
         left: 30px;
         
     }
