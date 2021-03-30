@@ -1,12 +1,13 @@
 .content {
   position: absolute;
-  top: 20px;
+  top: 50px;
   bottom: 0px;
   left: 300px;
   right: 0px;
-  padding-right: 40px;
-  padding-left: 40px;
+  padding-right: 0 px;
+  padding-left: 0 px;
   overflow: auto;
+  font-family: Helvetica, Arial,sans-serif;
 }
 
 /*中间的过度的横线*/
@@ -18,20 +19,52 @@
 }
 
 .imgBlock {
-  padding-bottom: 120px;
+  padding-bottom: 80px;
 }
 
 .sideNav {
-  padding: 10px 0;
+  padding: 0;
   position: fixed;
-  left: 50px;
-  top: 20px;
+  left: 20px;
+  top: 50px;
   bottom: 0px;
   width: 250px;
   /* same as .content left */
   background-color: rgb(255, 255, 255);
   border-right: 0.1 px solid #000;
   z-index: 1020;
+}
+
+/* 创建三个相等的列 */
+
+.column {
+  top: 0 px;
+  padding-left: 15px;
+  padding-right: 40px;
+  
+  float: left;
+  width: 50%;
+}
+
+
+
+/* 列后清除浮动 */
+
+.row{
+  padding-left: 0 px;
+  padding-top: 40px;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 响应式布局 - 小于 700 px 时改为上下布局 */
+
+@media screen and (max-width: 900px) {
+  .column {
+    padding-left: 10px;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -44,33 +77,5 @@
   .content {
     overflow-x: hidden;
     left: 0px;
-  }
-}
-
-/* 创建三个相等的列 */
-
-.column {
-  padding-left: 10px;
-  top: 50px;
-  padding: 20px;
-  float: left;
-  width: 50%;
-}
-
-/* 列后清除浮动 */
-
-.row:after {
-  padding-left: 10px;
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* 响应式布局 - 小于 700 px 时改为上下布局 */
-
-@media screen and (max-width: 900px) {
-  .column {
-    padding-left: 10px;
-    width: 100%;
   }
 }

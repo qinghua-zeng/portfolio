@@ -7,14 +7,26 @@ p.sansserif {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 45px;
     padding-bottom: 30px;
+    font-weight:bold;
 }
 
 h2 {
     font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-weight:bold;
+}
+
+h5 {
+    font-size: 25px;
 }
 
 p {
-    font-size: 8px;
+    font-size: 15px;
+}
+
+.blue{
+    color: #418add;
 }
