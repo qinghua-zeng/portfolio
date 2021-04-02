@@ -1,0 +1,38 @@
+.hello {
+    animation: myfirst 3s;
+    -webkit-animation: myfirst 3s;
+    /* Safari and Chrome */
+}
+
+@keyframes myfirst {
+    0% {
+        color: rgb(77, 184, 255);
+    }
+    33% {
+        color: rgb(255, 179, 251);
+    }
+    66% {
+        color: rgb(86, 190, 164);
+    }
+    100% {
+        color: #585858;
+    }
+}
+
+@-webkit-keyframes myfirst
+/* Safari and Chrome */
+
+    {
+    0% {
+        color: rgb(77, 184, 255);
+    }
+    33% {
+        color: rgb(255, 179, 251);
+    }
+    66% {
+        color: rgb(86, 190, 164);
+    }
+    100% {
+        color: rgb(61, 61, 61);
+    }
+}
