@@ -2,20 +2,31 @@
     animation: myfirst 3s;
     -webkit-animation: myfirst 3s;
     /* Safari and Chrome */
+    position:relative;
 }
 
 @keyframes myfirst {
     0% {
-        color: rgb(77, 184, 255);
+        color:  #585858;
+        left:0px; top:0px;
     }
+
+    16% {
+        color: rgb(77, 184, 255);
+        left:0px; top:0px;
+    }
+
+
     33% {
         color: rgb(255, 179, 251);
     }
     66% {
         color: rgb(86, 190, 164);
+        left:150px; top:0px;
     }
     100% {
         color: #585858;
+        left:0px; top:0px;
     }
 }
 
@@ -24,15 +35,25 @@
 
     {
     0% {
-        color: rgb(77, 184, 255);
+        color:  #585858;
+        left:0px; top:0px;
     }
+
+    16% {
+        color: rgb(77, 184, 255);
+        left:0px; top:0px;
+    }
+
+
     33% {
         color: rgb(255, 179, 251);
     }
     66% {
         color: rgb(86, 190, 164);
+        left:150px; top:0px;
     }
     100% {
         color: rgb(61, 61, 61);
+        left:0px; top:0px;
     }
 }
