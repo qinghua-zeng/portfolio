@@ -22,9 +22,6 @@
         right: 0;
         bottom: 0px;
     }
-
-    
-
     100% {}
 }
 
@@ -32,19 +29,9 @@
 /* Safari and Chrome */
 
     {
-    0% {
-        width: 0px;
-        left: 0px;
-        top: 0px;
-    }
-    16% {
-        left: 0px;
-        top: 0px;
-    }
-    33% {}
-    66% {
-        width: 15px;
-        left: 0px;
+    0% {}
+    70% {
+        width: 20%;
         top: 0px;
         position: relative;
         margin: auto;
@@ -53,12 +40,7 @@
         right: 0;
         bottom: 0px;
     }
-    100% {
-        opacity: 0%;
-        width: 0px;
-        left: 0px;
-        top: 0px;
-    }
+    100% {}
 }
 
 .hello {
