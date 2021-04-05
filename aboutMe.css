@@ -1,0 +1,27 @@
+.aboutMe {
+    width: 100%;
+    display: inline-block;
+}
+
+.selfie {
+    width: 30%;
+    display: inline-block;
+    top: 0px;
+    vertical-align: middle;
+}
+
+.contact {
+    padding-top: 50px;
+}
+
+.introduction {
+    padding-left: 5%;
+    width: 64%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.References {
+    width: 100%;
+    padding-right: 5%;
+}
