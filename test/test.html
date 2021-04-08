@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>菜鸟教程(runoob.com)</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+    </script>
+    <script>
+        x = 0;
+        $(document).ready(function () {
+            $("div").scroll(function () {
+                $("span").text(x += 1);
+
+                // window.alert($(window).scrollTop());
+            });
+
+
+
+            $("#ma").click(function () {
+                $("p").fadeOut();
+            });
+
+        });
+
+        $(function () {
+            //main_up部分的滑动效果
+            $('p').animate({
+                top: 190,
+                opacity: 0.5
+            }, 2000);
+
+            //鼠标滚动触发
+            $(window).on('scroll', function () {
+
+                $("h1").text($(window).scrollTop());
+                if ($(window).scrollTop() >= 100) {
+                    //淡入
+                    $('h1').animate({
+
+                        opacity: 1
+                    }, 2000);
+
+                }
+
+                //main_down部分的滑动效果
+                if ($(window).scrollTop() >= 1000) {
+                    //滑出
+                    $('.part2').slideDown(2000);
+                }
+
+                //从左滑出
+                if ($(window).scrollTop() >= 1800) {
+                    $('.part3').animate({
+                        left: 0
+                    }, 1500);
+                }
+
+                //淡出
+                if ($(window).scrollTop() >= 2600) {
+                    $('.part4').animate({
+                        opacity: 1
+                    }, 2000);
+                }
+            });
+        });
+
+
+
+    </script>
+</head>
+
+<body>
+
+    <img id="ma" src="src/covers/incisive.png" alt="" />
+    <p>尝试滚动 div 中的滚动条</p>
+    <div style="border:1px solid black;width:200px;height:100px;overflow:scroll;">菜鸟教程 —— 学的不仅是技术，更是梦想！菜鸟教程 ——
+        学的不仅是技术，更是梦想！
+        <br><br>
+        菜鸟教程 —— 学的不仅是技术，更是梦想！菜鸟教程 —— 学的不仅是技术，更是梦想！
+    </div>
+    <p>滚动了 <span>.</span> 次。</p>
+    <h1>尝试滚动 div 中的滚动条</h1>
+
+    <h1>尝试滚动 div 中的滚动条</h1>
+    <h1>尝试滚动 div 中的滚动条</h1>
+    <h1>尝试滚动 div 中的滚动条</h1>
+    <h1>尝试滚动 div 中的滚动条</h1>
+    <h1>尝试滚动 div 中的滚动条</h1>
+    <h1>尝试滚动 div 中的滚动条</h1>
+
+    <style>
+        h1 {
+            opacity: 0;
+        }
+    </style>
+</body>
+
+</html>
