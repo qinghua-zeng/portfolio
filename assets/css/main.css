@@ -2924,3 +2924,12 @@ body.is-menu-visible #menu .close {
 
 }
 
+.backToTop {
+	width: 50px;
+	position: fixed; 
+	/*  横纵必须同时定义*/
+	bottom:30px;
+	right: 50px; 
+
+} 
+
